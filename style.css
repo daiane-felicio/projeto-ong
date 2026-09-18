@@ -1,0 +1,41 @@
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input {
+    border-radius: 6px;
+}
+
+button {
+    border-radius: 6px;
+}

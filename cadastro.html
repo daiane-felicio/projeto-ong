@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - ONG Esperança</title>
+</head>
+
+<body>
+    <main>
+    <h1>Cadastro de Voluntários</h1>
+
+   <form>
+      <fieldset>
+    <legend>Dados pessoais</legend>
+
+    <label for="nome">Nome completo:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="cpf">CPF:</label>
+    <input
+        type="text"
+        id="cpf"
+        name="cpf"
+        placeholder="000.000.000-00"
+        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+        required
+    >
+</fieldset>
+
+<fieldset>
+    <legend>Contato</legend>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefone">Telefone:</label>
+    <input
+        type="tel"
+        id="telefone"
+        name="telefone"
+        placeholder="(31) 99999-9999"
+        pattern="\(\d{2}\) \d{5}-\d{4}"
+        required
+    >
+
+    <label for="cep">CEP:</label>
+    <input
+        type="text"
+        id="cep"
+        name="cep"
+        placeholder="00000-000"
+        pattern="\d{5}-\d{3}"
+        required
+    >
+</fieldset>
+
+   <button type="submit">Enviar cadastro</button>
+    
+
+</form>
+
+
+</main>
+
+</body>
+
+</html>
