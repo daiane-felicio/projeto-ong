@@ -113,7 +113,7 @@ button {
 }
 
 .feedback {
-    display: flex;
+    display: none;
     align-items: center;
     gap: var(--espaco-sm);
     margin-top: var(--espaco-md);
@@ -230,11 +230,13 @@ button:disabled {
 }
 
 .feedback.sucesso {
+    display: flex;
     border-color: #2e7d32;
     color: #2e7d32;
 }
 
 .feedback.erro {
+    display: flex;
     border-color: #c62828;
     color: #c62828;
 }
