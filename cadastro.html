@@ -26,8 +26,11 @@
         name="cpf"
         placeholder="000.000.000-00"
         pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+        aria-describedby="ajuda-cpf"
         required
     >
+    <small id="ajuda-cpf">Formato: 000.000.000-00</small>    
+
 </fieldset>
 
 <fieldset>
@@ -43,8 +46,11 @@
         name="telefone"
         placeholder="(31) 99999-9999"
         pattern="\(\d{2}\) \d{5}-\d{4}"
+        aria-describedby="ajuda-telefone"
         required
     >
+
+    <small id="ajuda-telefone">Formato: (31) 99999-9999</small>
 
     <label for="cep">CEP:</label>
     <input
@@ -53,17 +59,20 @@
         name="cep"
         placeholder="00000-000"
         pattern="\d{5}-\d{3}"
+        aria-describedby="ajuda-cep"
         required
     >
+
+    <small id="ajuda-cep">Formato: 00000-000</small>
+
 </fieldset>
 
-   <div class="acoes">
-        <button type="submit">Enviar cadastro</button>
-   </div>
-    <div class="feedback">
-        <span>✓</span>
+<button type="submit">Enviar</button>
+
+   <div class="feedback" role="status" aria-live="polite">
+        <span aria-hidden="true">✓</span>
         <p>Cadastro enviado com sucesso!</p>
-   </div>
+</div>
 
 </form>
 
