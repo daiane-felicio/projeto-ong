@@ -211,6 +211,15 @@ button {
 }
 
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-fundo: #121212;
+    --cor-superficie: #1e1e1e;
+    --cor-texto: #f5f5f5;
+    --cor-borda: #4a4a4a;
+  }
+}
+
 button:hover {
     background-color: var(--cor-secundaria);
 }
