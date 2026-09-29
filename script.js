@@ -3,6 +3,9 @@ const nome = document.querySelector("#nome");
 const email = document.querySelector("#email");
 const feedback = document.querySelector(".feedback");
 const mensagemFeedback = document.querySelector(".feedback p");
+const cpf = document.querySelector("#cpf");
+const telefone = document.querySelector("#telefone");
+const cep = document.querySelector("#cep");
 
 formulario.addEventListener("input", function() {
     feedback.classList.remove("sucesso");
@@ -33,9 +36,27 @@ formulario.addEventListener("submit", function(event) {
         return;
     }
 
+
     feedback.classList.remove("erro");
     feedback.classList.add("sucesso");
     mensagemFeedback.textContent = "Cadastro enviado com sucesso!";
 
+    const dadosCadastro = {
+        nome: nome.value,
+        cpf: cpf.value,
+        email: email.value,
+        telefone: telefone.value,
+        cep: cep.value
+    };
+
+    localStorage.setItem("dadosCadastro", JSON.stringify(dadosCadastro));
+
 });
 
+const dadosSalvos = localStorage.getItem("dadosCadastro");
+
+if (dadosSalvos) {
+    const dadosConvertidos = JSON.parse(dadosSalvos);
+
+    console.log(dadosConvertidos);
+}
