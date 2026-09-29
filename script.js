@@ -58,5 +58,11 @@ const dadosSalvos = localStorage.getItem("dadosCadastro");
 if (dadosSalvos) {
     const dadosConvertidos = JSON.parse(dadosSalvos);
 
+    nome.value = dadosConvertidos.nome;
+    cpf.value = dadosConvertidos.cpf;
+    email.value = dadosConvertidos.email;
+    telefone.value = dadosConvertidos.telefone;
+    cep.value = dadosConvertidos.cep;
+
     console.log(dadosConvertidos);
 }
