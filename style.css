@@ -81,6 +81,12 @@ button {
     font-size: var(--fonte-sm);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .acoes {
     display: flex;
     justify-content: center;
