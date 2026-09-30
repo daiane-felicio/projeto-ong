@@ -1,0 +1,1 @@
+import { iniciarFormulario } from "./formulario.js"; iniciarFormulario();
